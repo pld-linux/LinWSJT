@@ -2,7 +2,7 @@ Summary:	JT44 and FSK441 for Linux
 Summary(pl):	JT44 and FSK441 dla Linuksa
 Name:		LinWSJT
 Version:	0.4.6
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications
 Source0:	http://www.qsl.net/g4klx/%{name}-%{version}.tar.gz
