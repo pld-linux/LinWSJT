@@ -18,7 +18,7 @@ described together as WSJT.
 
 JT44 is used for very weak signal operation, for example Moonbounce,
 while FSK441 is specifically designed for Meteor Scatter.
- 
+
 %description -l pl
 Obs³uga protoko³ów komunikacyjnych JT44 oraz FSK441, zwykle
 okre¶lanych razem jako WSJT.
@@ -26,9 +26,9 @@ okre¶lanych razem jako WSJT.
 JT44 jest u¿ywane w przypadku bardzo s³abych sygna³ów, np. odbicie od
 ksiê¿yca, a FSK441 zosta³ zaprojektowany do ³±czno¶ci przez odbicie od
 ¶ladów meteorów.
-  
+
 %prep
-%setup -q 
+%setup -q
 %patch -p1
 
 %build
