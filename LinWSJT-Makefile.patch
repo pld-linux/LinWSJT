@@ -1,5 +1,5 @@
 --- LinWSJT-0.4.6/Makefile	Wed Jun 11 21:46:24 2003
-+++ LinWSJT/Makefile	Mon Aug  4 19:57:35 2003
++++ LinWSJT/Makefile	Wed Aug  6 00:27:02 2003
 @@ -1,14 +1,14 @@
 -BINDIR=/usr/local/bin
 +BINDIR=/usr/bin
@@ -17,7 +17,7 @@
  
 -export CFLAGS := -O2 -Wall -march=pentium -I.. $(shell wx-config --cxxflags)
 -#export CFLAGS := -g -O2 -Wall -march=pentium -I.. $(shell wx-config --cxxflags)
-+export CFLAGS := -O2 -Wall -march=pentium -I.. $(shell wxgtk-2.4-config --cxxflags)
++export CFLAGS := -O2 -Wall -I.. $(shell wxgtk-2.4-config --cxxflags)
 +#export CFLAGS := -g -O2 -Wall -march=pentium -I.. $(shell wxgtk-2.4-config --cxxflags)
  
  all:		FSK441 JT44
