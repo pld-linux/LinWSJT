@@ -1,0 +1,35 @@
+--- LinWSJT-0.4.6/Makefile	Wed Jun 11 21:46:24 2003
++++ LinWSJT/Makefile	Mon Aug  4 19:57:35 2003
+@@ -1,14 +1,14 @@
+-BINDIR=/usr/local/bin
++BINDIR=/usr/bin
+ 
+-export CC := $(shell wx-config --cxx)
++export CC := $(shell wxgtk-2.4-config --cxx)
+ 
+-export LDFLAGS := $(shell wx-config --ldflags)
+-#export LDFLAGS := -g $(shell wx-config --ldflags)
++export LDFLAGS := $(shell wxgtk-2.4-config --ldflags)
++#export LDFLAGS := -g $(shell wxgtk-2.4-config --ldflags)
+ 
+-export LIBS := -lfftw -lsndfile $(shell wx-config --libs)
++export LIBS := -lfftw -lsndfile $(shell wxgtk-2.4-config --libs)
+ 
+-export CFLAGS := -O2 -Wall -march=pentium -I.. $(shell wx-config --cxxflags)
+-#export CFLAGS := -g -O2 -Wall -march=pentium -I.. $(shell wx-config --cxxflags)
++export CFLAGS := -O2 -Wall -march=pentium -I.. $(shell wxgtk-2.4-config --cxxflags)
++#export CFLAGS := -g -O2 -Wall -march=pentium -I.. $(shell wxgtk-2.4-config --cxxflags)
+ 
+ all:		FSK441 JT44
+ 
+@@ -37,8 +37,8 @@
+ 		make -C jt44
+ 
+ install:	FSK441 JT44
+-		install -g bin -o root -m 0775 FSK441 $(BINDIR)
+-		install -g bin -o root -m 0775 JT44 $(BINDIR)
++		install -m 0775 FSK441 $(DESTDIR)$(BINDIR)
++		install -m 0775 JT44 $(DESTDIR)$(BINDIR)
+ 
+ clean:
+ 		rm -f core FSK441 JT44 *.o *~ *.bak
