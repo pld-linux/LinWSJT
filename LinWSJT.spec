@@ -9,7 +9,7 @@ Source0:	http://www.qsl.net/g4klx/%{name}-%{version}.tar.gz
 # Source0-md5:	dd9cf86f4bd260eea759abde8c2ae28c
 Patch0:		%{name}-Makefile.patch
 URL:		http://aldo.sourceforge.net/
-BuildRequires:	wxGTK-devel
+BuildRequires:	wxGTK2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,7 +33,10 @@ ksiê¿yca, a FSK441 zosta³ zaprojektowany do ³±czno¶ci przez odbicie od
 
 %build
 %{__make} \
-	CC="%{__cc}"
+	CC="%{__cxx}" \
+	CFLAGS="%{rpmcflags} -Wall -I.. `wxgtk2-2.4-config --cxxflags`" \
+	LDFLAGS="`wxgtk2-2.4-config --ldflags`" \
+	LIBS="-lfftw -lsndfile `wxgtk2-2.4-config --libs`"
 
 %install
 rm -rf $RPM_BUILD_ROOT
