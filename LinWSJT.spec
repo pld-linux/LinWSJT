@@ -29,7 +29,7 @@ ksiê¿yca, a FSK441 zosta³ zaprojektowany do ³±czno¶ci przez odbicie od
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
 
 %build
 %{__make} \
