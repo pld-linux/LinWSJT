@@ -1,5 +1,5 @@
 Summary:	JT44 and FSK441 for Linux
-Summary(pl.UTF-8):   JT44 i FSK441 dla Linuksa
+Summary(pl.UTF-8):	JT44 i FSK441 dla Linuksa
 Name:		LinWSJT
 Version:	0.4.6
 Release:	2
