@@ -1,5 +1,5 @@
 Summary:	JT44 and FSK441 for Linux
-Summary(pl):	JT44 i FSK441 dla Linuksa
+Summary(pl.UTF-8):   JT44 i FSK441 dla Linuksa
 Name:		LinWSJT
 Version:	0.4.6
 Release:	2
@@ -19,13 +19,13 @@ described together as WSJT.
 JT44 is used for very weak signal operation, for example Moonbounce,
 while FSK441 is specifically designed for Meteor Scatter.
 
-%description -l pl
-Obs≥uga protoko≥Ûw komunikacyjnych JT44 oraz FSK441, zwykle
-okre∂lanych razem jako WSJT.
+%description -l pl.UTF-8
+Obs≈Çuga protoko≈Ç√≥w komunikacyjnych JT44 oraz FSK441, zwykle
+okre≈õlanych razem jako WSJT.
 
-JT44 jest uøywane w przypadku bardzo s≥abych sygna≥Ûw, np. odbicie od
-ksiÍøyca, a FSK441 zosta≥ zaprojektowany do ≥±czno∂ci przez odbicie od
-∂ladÛw meteorÛw.
+JT44 jest u≈ºywane w przypadku bardzo s≈Çabych sygna≈Ç√≥w, np. odbicie od
+ksiƒô≈ºyca, a FSK441 zosta≈Ç zaprojektowany do ≈ÇƒÖczno≈õci przez odbicie od
+≈õlad√≥w meteor√≥w.
 
 %prep
 %setup -q
